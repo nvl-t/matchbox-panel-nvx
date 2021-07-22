@@ -1,9 +1,9 @@
 ACLOCAL_AMFLAGS = -I m4
 
-SUBDIRS = matchbox-panel applets data po
+SUBDIRS = mb-panel applets data po
 
 pcdatadir = $(libdir)/pkgconfig
-dist_pcdata_DATA= matchbox-panel.pc
+dist_pcdata_DATA= mb-panel.pc
 
 MAINTAINERCLEANFILES = \
 	$(GITIGNORE_MAINTAINERCLEANFILES_TOPLEVEL) \

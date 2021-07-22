@@ -2,9 +2,9 @@ prefix=@prefix@
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
-appletdir=${libdir}/matchbox-panel
+appletdir=${libdir}/mb-panel
 
-Name: matchbox-panel
+Name: mb-panel
 Description: Simple GTK+ based panel
 Version: @VERSION@
 Cflags: -I${includedir}

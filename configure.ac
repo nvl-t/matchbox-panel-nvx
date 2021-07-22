@@ -1,7 +1,7 @@
 AC_PREREQ(2.53)
-AC_INIT(matchbox-panel, 2.11, [yocto@yoctoproject.org])
+AC_INIT(mb-panel, 1.0.0)
 AM_INIT_AUTOMAKE([-Wno-portability foreign])
-AC_CONFIG_SRCDIR(matchbox-panel/mb-panel.c)
+AC_CONFIG_SRCDIR(mb-panel/mb-panel.c)
 AM_CONFIG_HEADER(config.h)
 
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
@@ -16,7 +16,7 @@ WARN_CFLAGS="-Wall -Wextra -Wno-unused-parameter"
 AC_SUBST(WARN_CFLAGS)
 
 # base deps
-PKG_CHECK_MODULES(MATCHBOX_PANEL,
+PKG_CHECK_MODULES(MB_PANEL,
                   glib-2.0
                   gmodule-export-2.0
                   x11
@@ -81,7 +81,7 @@ GLIB_GENMARSHAL=`$PKG_CONFIG --variable=glib_genmarshal glib-2.0`
 AC_SUBST(GLIB_GENMARSHAL)
 
 # gettext
-GETTEXT_PACKAGE=matchbox-panel
+GETTEXT_PACKAGE=mb-panel
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, ["$GETTEXT_PACKAGE"], 
   [Define the gettext package to be used])
@@ -91,8 +91,8 @@ AM_GNU_GETTEXT([external])
 # output stuff
 AC_OUTPUT([
 Makefile
-matchbox-panel.pc
-matchbox-panel/Makefile
+mb-panel.pc
+mb-panel/Makefile
 applets/Makefile
 applets/battery/Makefile
 applets/brightness/Makefile
