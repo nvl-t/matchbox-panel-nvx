@@ -13,8 +13,8 @@
 #include <string.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <matchbox-panel/mb-panel.h>
-#include <matchbox-panel/mb-panel-scaling-image2.h>
+#include <mb-panel/mb-panel.h>
+#include <mb-panel/mb-panel-scaling-image2.h>
 
 #ifdef USE_LIBSN
   #define SN_API_NOT_YET_FROZEN 1
@@ -192,7 +192,7 @@ button_release_event_cb (GtkWidget      *event_box,
                                                      applet->argv[0]);
           
                 sn_launcher_context_initiate (context,
-                                              "matchbox-panel",
+                                              "mb-panel",
                                               applet->argv[0],
                                               CurrentTime);
         }
@@ -331,7 +331,7 @@ mb_panel_applet_create (const char    *id,
         /* Create widgets */
         event_box = gtk_event_box_new ();
 
-        gtk_widget_set_name (event_box, "MatchboxPanelLauncher");
+        gtk_widget_set_name (event_box, "MbPanelLauncher");
 
         image = mb_panel_scaling_image2_new (orientation, icon);
         g_free (icon);

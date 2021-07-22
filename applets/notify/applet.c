@@ -10,7 +10,7 @@
 
 #include <config.h>
 #include <gtk/gtk.h>
-#include <matchbox-panel/mb-panel.h>
+#include <mb-panel/mb-panel.h>
 #include "notify-store.h"
 #include "mb-notification.h"
 

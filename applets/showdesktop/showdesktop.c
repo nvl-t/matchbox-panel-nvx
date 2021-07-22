@@ -12,8 +12,8 @@
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
 #include <X11/Xatom.h>
-#include <matchbox-panel/mb-panel.h>
-#include <matchbox-panel/mb-panel-scaling-image2.h>
+#include <mb-panel/mb-panel.h>
+#include <mb-panel/mb-panel-scaling-image2.h>
 
 typedef struct {
         GtkButton *button;
@@ -202,7 +202,7 @@ mb_panel_applet_create (const char    *id,
 
         gtk_widget_set_can_focus (button, FALSE);
 
-        gtk_widget_set_name (button, "MatchboxPanelShowDesktop");
+        gtk_widget_set_name (button, "MbPanelShowDesktop");
 
         image = mb_panel_scaling_image2_new (orientation, NULL);
         applet->image = MB_PANEL_SCALING_IMAGE2 (image);

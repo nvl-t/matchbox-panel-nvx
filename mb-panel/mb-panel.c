@@ -298,16 +298,16 @@ main (int argc, char **argv)
 
         /* Make sure that GModule is supported */
         if (!g_module_supported ()) {
-                g_warning (_("GModule support not found, this is required for matchbox-panel to work"));
+                g_warning (_("GModule support not found, this is required for mb-panel to work"));
                 return -1;
         }
 
         /* Set up command line handling */
         option_context = g_option_context_new (NULL);
 
-        option_group = g_option_group_new ("matchbox-panel",
-                                           N_("Matchbox Panel"),
-                                           N_("Matchbox Panel options"),
+        option_group = g_option_group_new ("mb-panel",
+                                           N_("Mb Panel"),
+                                           N_("Mb Panel options"),
                                            NULL, NULL);
         g_option_group_add_entries (option_group, option_entries);
         g_option_context_set_main_group (option_context, option_group);

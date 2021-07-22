@@ -9,8 +9,8 @@
  */
 
 #include "battery.h"
-#include <matchbox-panel/mb-panel.h>
-#include <matchbox-panel/mb-panel-scaling-image2.h>
+#include <mb-panel/mb-panel.h>
+#include <mb-panel/mb-panel-scaling-image2.h>
 
 typedef struct {
         MBPanelScalingImage2 *image;
@@ -66,7 +66,7 @@ mb_panel_applet_create (const char    *id,
         image = mb_panel_scaling_image2_new (orientation, NULL);
         applet->image = MB_PANEL_SCALING_IMAGE2 (image);
 
-        gtk_widget_set_name (image, "MatchboxPanelBatteryMonitor");
+        gtk_widget_set_name (image, "MbPanelBatteryMonitor");
 
         g_object_weak_ref (G_OBJECT (image),
                            (GWeakNotify) battery_applet_free,

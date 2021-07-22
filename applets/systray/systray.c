@@ -12,7 +12,7 @@
 
 #include <config.h>
 #include <gtk/gtk.h>
-#include <matchbox-panel/mb-panel.h>
+#include <mb-panel/mb-panel.h>
 
 #include "na-tray.h"
 
@@ -43,7 +43,7 @@ mb_panel_applet_create (const char    *id,
 
         box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 
-        gtk_widget_set_name (box, "MatchboxPanelSystemTray");
+        gtk_widget_set_name (box, "MbPanelSystemTray");
 
         g_signal_connect (box, "realize", G_CALLBACK (on_realize), GINT_TO_POINTER (orientation));
 

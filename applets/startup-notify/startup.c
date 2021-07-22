@@ -40,7 +40,7 @@
 #include <string.h>
 #include "marshal.h"
 
-#include <matchbox-panel/mb-panel.h>
+#include <mb-panel/mb-panel.h>
 
 #define TIMEOUT 20
 
@@ -87,7 +87,7 @@ notify_send (StartupApplet *applet, const char *summary)
 {
   dbus_g_proxy_begin_call (applet->proxy, "Notify",
                            notify_done, applet, NULL,
-                           G_TYPE_STRING, "matchbox-panel",
+                           G_TYPE_STRING, "mb-panel",
                            G_TYPE_UINT, applet->notify_id,
                            G_TYPE_STRING, "application-x-executable",
                            G_TYPE_STRING, summary,

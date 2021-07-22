@@ -14,7 +14,7 @@
 #include <config.h>
 #include <time.h>
 #include <gtk/gtk.h>
-#include <matchbox-panel/mb-panel.h>
+#include <mb-panel/mb-panel.h>
 
 typedef struct {
         GtkLabel *label;
@@ -79,7 +79,7 @@ mb_panel_applet_create (const char    *id,
         label = gtk_label_new (NULL);
         applet->label = GTK_LABEL (label);
 
-        gtk_widget_set_name (label, "MatchboxPanelClock");
+        gtk_widget_set_name (label, "MbPanelClock");
 
         g_object_weak_ref (G_OBJECT (label),
                            (GWeakNotify) clock_applet_free,

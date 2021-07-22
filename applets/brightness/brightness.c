@@ -9,7 +9,7 @@
 #include <config.h>
 #include <string.h>
 #include <errno.h>
-#include <matchbox-panel/mb-panel.h>
+#include <mb-panel/mb-panel.h>
 #include <gtk/gtk.h>
 
 typedef struct {
@@ -140,7 +140,7 @@ mb_panel_applet_create(const char *id, GtkOrientation orientation)
                                      1, 100, 1,
                                      icons);
         applet->scale = scale;
-        gtk_widget_set_name(scale, "MatchboxPanelBrightness");
+        gtk_widget_set_name(scale, "MbPanelBrightness");
 
         if (!applet_initialize(applet)) {
             g_error("Error initializing applet");

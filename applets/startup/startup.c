@@ -39,8 +39,8 @@
 #include <libsn/sn.h>
 
 #include <string.h>
-#include <matchbox-panel/mb-panel.h>
-#include <matchbox-panel/mb-panel-scaling-image2.h>
+#include <mb-panel/mb-panel.h>
+#include <mb-panel/mb-panel-scaling-image2.h>
 
 #define TIMEOUT 20
 #define HOURGLASS_PIXMAPS 8
@@ -266,7 +266,7 @@ mb_panel_applet_create (const char    *id,
         applet->image = MB_PANEL_SCALING_IMAGE2
                               (mb_panel_scaling_image2_new (orientation, NULL));
         gtk_widget_set_name (GTK_WIDGET(applet->image),
-                             "MatchboxPanelStartupMonitor");
+                             "MbPanelStartupMonitor");
 
         g_object_weak_ref (G_OBJECT(applet->image),
                            (GWeakNotify) startup_applet_free, applet);
