@@ -1,13 +1,3 @@
-/* 
- * (C) 2006, 2007 OpenedHand Ltd.
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * Author: Jorn Baayen <jorn@openedhand.com>
- *
- * Licensed under the GPL v2 or greater.
- */
-
 #ifndef __MB_PANEL_SCALING_IMAGE_H__
 #define __MB_PANEL_SCALING_IMAGE_H__
 

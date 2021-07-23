@@ -1,13 +1,3 @@
-/*
- * (C) 2013 Intel Corp
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * Author: Ross Burton <ross.burton@intel.com>
- *
- * Licensed under the GPL v2 or greater.
- */
-
 #ifndef __MB_PANEL_SCALING_IMAGE2_H__
 #define __MB_PANEL_SCALING_IMAGE2_H__
 

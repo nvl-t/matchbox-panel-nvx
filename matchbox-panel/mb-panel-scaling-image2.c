@@ -1,14 +1,3 @@
-/* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 8 -*- */
-/*
- * (C) 2013 Intel Corp
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * Author: Ross Burton <ross.burton@intel.com>
- *
- * Licensed under the GPL v2 or greater.
- */
-
 #include <config.h>
 #include <string.h>
 #include <gtk/gtk.h>
