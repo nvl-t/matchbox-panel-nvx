@@ -1,5 +1,6 @@
 AC_PREREQ(2.53)
-AC_INIT(matchbox-panel, 2.11, [yocto@yoctoproject.org])
+#AC_INIT(matchbox-panel, 2.11, [yocto@yoctoproject.org])
+AC_INIT(mb-panel, 1.0.0)
 AM_INIT_AUTOMAKE([-Wno-portability foreign])
 AC_CONFIG_SRCDIR(matchbox-panel/mb-panel.c)
 AM_CONFIG_HEADER(config.h)
